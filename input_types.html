@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>LITS WEBUI course</title>
+  <meta name="description" content="LITS WEBUI course">
+  <meta name="author" content="Liu">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <form >
+	<fieldset>
+		<legend>Person</legend>
+			First name: <input type="text" name="fname"><br>
+			E-mail: <input type="email" name="usremail"><br>
+			Password: <input type="password" name="pass"><br>
+			Age:<input list="ages">
+                <datalist id="ages" required>
+                    <option value="less than 21"></option>
+                    <option value="between 21 and 30"></option>
+                    <option value="between 30 and 60"></option>
+                </datalist><br>
+            Attempt #: <input type="number" value="1" min="1" max="10" name="num"><br>
+	</fieldset>
+
+	<fieldset>
+		<legend>Layout and options</legend>
+			<input type="radio" name="bgdark">Dark background<br>
+            <input type="radio" name="bglight">Light background<br>
+            <input type="checkbox" name="hints">Use hints<br>
+	</fieldset>
+
+	<fieldset>
+		<legend>Select test difficulty</legend>
+        <select name="difficulty">
+        <option value="easy">Easy-peasy</option>
+        <option value="medium">watched a tutorial</option>
+        <option value="difficult">I know my stuff</option>
+        <option value="hard">Bring it on!</option>
+        </select>
+	</fieldset>
+
+	<fieldset>
+		<legend>URL</legend>
+			<input type="url" name ="homepage" novalidate><br>
+			range
+	</fieldset>
+	<input type="button" name="reset" value="Reset">
+    <input type="submit" name="submit" value="Submit">
+    <input type="button" name="nothing" value="Do nothing">
+    <fieldset>
+    <legend>Rest of the input types</legend>
+        Date:<input type="date" name="bday"><br>
+        Color:<input type="color" name="favcolor"><br>
+        Barney's scale<input type="range" name="points" min="0" max="10"><br>
+        Select a week:<input type="week" name="week_year"><br>
+        Birthday (date and time):<input type="datetime" name="bdaytime"><br>
+        Search Google:<input type="search" name="googlesearch"><br>
+        Telephone:<input type="tel" name="usrtel"><br>
+	</fieldset>
+</form>
+</body>
+</html>

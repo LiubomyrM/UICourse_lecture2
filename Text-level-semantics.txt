@@ -1,0 +1,95 @@
+a
+
+Hyperlinks
+
+em
+
+Stress emphasis
+ 
+strong
+
+Importance
+
+small
+
+Side comments
+
+s
+
+Inaccurate text
+
+cite
+
+Titles of works
+
+q
+
+Quotations
+
+dfn
+
+Defining instance
+
+abbr
+
+Abbreviations
+
+code
+
+Computer code
+
+var
+
+Variables
+
+samp
+
+Computer output
+
+kbd
+
+User input
+
+sub
+
+Subscripts
+
+sup
+
+Superscripts
+
+i
+
+Alternative voice
+
+b
+
+Keywords
+
+mark
+
+Highlight
+
+ruby, rt, rp
+
+Ruby annotations
+
+bdi
+
+Text directionality isolation
+
+bdo
+
+Text directionality formatting
+
+span
+
+Other
+
+br
+
+Line break
+
+wbr
+
+Line breaking opportunity

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=620">
+<title>HTML5 Demo: Online connectivity monitoring</title>
+<link rel="stylesheet" href="css/html5demos.css">
+<script src="js/h5utils.js"></script></head>
+<body>
+<section id="wrapper">
+    <header>
+      <h1>Online connectivity monitoring</h1>
+    </header>
+
+<article>
+  <p>Current network status: <span id="status">checking...</span></p>
+  <ol id="state"></ol>
+</article>
+<script>
+var statusElem  = document.getElementById('status'),
+    state               = document.getElementById('state');
+
+function online(event) {
+  statusElem.className = navigator.onLine ? 'online' : 'offline';
+  statusElem.innerHTML = navigator.onLine ? 'online' : 'offline';
+  state.innerHTML += '<li>New event: ' + event.type + '</li>';
+}
+
+addEvent(window, 'online', online);
+addEvent(window, 'offline', online);
+online({ type: 'ready' });
+</script> 
+</section>
+</body>
+</html>
