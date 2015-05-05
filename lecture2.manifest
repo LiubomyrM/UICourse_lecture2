@@ -3,7 +3,7 @@ CACHE MANIFEST
 Page1.html
 Page2.html
 main.css
-/img/offline.jpeg
+/img/offline.jpg
 
 # Resources that require the user to be online.
 NETWORK:
