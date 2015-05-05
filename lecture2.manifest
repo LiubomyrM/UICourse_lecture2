@@ -3,11 +3,11 @@ CACHE MANIFEST
 Page1.html
 Page2.html
 main.css
-/img/offline.jpg
+img/offline.jpg
 
 # Resources that require the user to be online.
 NETWORK:
 *
 
 FALLBACK:
-/ /offline.html
+/ offline/offline.html
