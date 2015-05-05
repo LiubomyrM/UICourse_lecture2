@@ -1,9 +1,9 @@
 CACHE MANIFEST
-# 2015-05-05:v1
+# 2015-05-05:v2
 Page1.html
 Page2.html
 main.css
-/img/offline.jpeg
+/img/offline.jpg
 
 # Resources that require the user to be online.
 NETWORK:
