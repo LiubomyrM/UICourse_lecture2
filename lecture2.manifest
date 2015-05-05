@@ -1,7 +1,6 @@
 CACHE MANIFEST
-# 2015-05-05:v4
-Page1.html
-Page2.html
+# 2015-05-05:v5
+*.html
 main.css
 img/offline.jpg
 
