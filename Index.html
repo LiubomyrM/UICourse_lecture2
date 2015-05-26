@@ -7,7 +7,7 @@
     <meta name="description" content="LITS WEBUI course">
     <meta name="author" content="Liu">
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,900italic,400,400italic,100,700italic,300,700,500italic,100italic,300italic,900&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -16,7 +16,7 @@
     <header>
         <form>
             <input type="button" onClick="parent.location='Page1.html'" value="Home" disabled>
-            <input type="button" onClick="parent.location='Page2.html'" value="Create Arcticle">
+            <input type="button" onClick="parent.location='Page2.html'" value="Create Article">
         </form>
     </header>
     <main>
@@ -54,11 +54,11 @@
                 {
                     document.getElementById("status").innerHTML = "Offline";
                 }
-                window.addEventListener('online',  updateOnlineStatus);
-                window.addEventListener('offline', updateOfflineStatus);
+                window.addEventListener('online',  updateOnlineStatus());
+                window.addEventListener('offline', updateOfflineStatus());
             </script>
         </div>
     </aside>
-    <script src="app.js"></script>
+    <!--<script src="app.js"></script>-->
 </body>
 </html>

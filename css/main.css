@@ -19,10 +19,6 @@ header form input {
     margin: 1em    
 }
 
-#a {
-border: 1px solid;
-}
-
 aside {
     float:right;
     width:45%;
@@ -51,6 +47,7 @@ main h3{
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-#title, main textarea{
+.title, main textarea{
+    display: block;
     background-color: dodgerblue;
 }
