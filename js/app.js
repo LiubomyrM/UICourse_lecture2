@@ -19,5 +19,38 @@ function updateOnlineStatus() {
 function updateOfflineStatus() {
     document.getElementById("status").innerHTML = "Offline";
 }
-window.addEventListener('online',  updateOnlineStatus);
-window.addEventListener('offline', updateOfflineStatus);
+window.addEventListener('online',  updateOnlineStatus());
+window.addEventListener('offline', updateOfflineStatus());
+
+/*26 may 2015 lecture 8*/
+function reportOnlineStatus() {}
+function sendMessageToServer() {}
+function isOnline() {
+    return navigator.onLine;
+}
+function reportOnlineStatus() {
+    if (isOnline()) {
+        //...
+    } else {
+        //...
+    }
+    //...
+}
+
+(function () {
+    
+    if (window.applicationCache) {
+        
+        window.addEventListener('online', function (e) {
+            reportOnlineStatus();
+            sendMessageToServer();
+        }, true);
+        
+        window.addEventListener('offline', function (e) {
+            reportOnlineStatus();
+        }, true);
+        
+        reportOnlineStatus();
+    }
+})();
+

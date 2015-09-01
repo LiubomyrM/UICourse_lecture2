@@ -42,23 +42,6 @@
             </li>
         </ul>
     </main>
-    <aside>
-        <div>
-            <p id="status">Online/Offline</p>
-            <script>
-                function updateOnlineStatus()
-                {
-                    document.getElementById("status").innerHTML = "Online";
-                }
-                function updateOfflineStatus()
-                {
-                    document.getElementById("status").innerHTML = "Offline";
-                }
-                window.addEventListener('online',  updateOnlineStatus());
-                window.addEventListener('offline', updateOfflineStatus());
-            </script>
-        </div>
-    </aside>
-    <!--<script src="app.js"></script>-->
+    <script src="js/app.js"></script>
 </body>
 </html>
